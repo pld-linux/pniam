@@ -52,13 +52,3 @@ rm -rf $RPM_BUILD_ROOT
 /lib/* 
 /etc/security/*
 /usr/include/pniam/*
-
-%changelog
-* Wed Jun 23 1999 Micha³ Kuratczyk <kura@pld.org.pl>
-  [0.04-2]
-- install -d instead mkdir
-- added gzipping documentation
-- added using RPM macros
-
-* Wed Jun  2 1999 Grzegorz Stanislawski <stangrze@open.net.pl>
-- First RPM release
