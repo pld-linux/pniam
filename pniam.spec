@@ -17,7 +17,7 @@ PNIAM - revolutionary authentication and authorization library.
 PNIAM - rewolucyjna biblioteka autentykacji i autoryzacji.
 
 %prep
-%setup -q 
+%setup -q
 %patch -p1
 
 %build
@@ -31,7 +31,7 @@ $RPM_BUILD_ROOT%{_sysconfdir}/pniam.d \
 	$RPM_BUILD_ROOT/lib \
 	$RPM_BUILD_ROOT/lib/pniam \
 	$RPM_BUILD_ROOT%{_includedir}/pniam
-	
+
 install lib/libpniam.so  $RPM_BUILD_ROOT/lib/libpniam.so
 install include/pniam.h	 $RPM_BUILD_ROOT%{_includedir}/pniam/pniam.h
 install include/pniam_mod.h	 $RPM_BUILD_ROOT%{_includedir}/pniam/pniam_mod.h
@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_sysconfdir}/pniam.d
 %dir /etc/security
 %dir %{_includedir}/pniam
-/lib/* 
+/lib/*
 /etc/security/*
 %{_includedir}/pniam/*
