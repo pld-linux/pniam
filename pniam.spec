@@ -8,7 +8,7 @@ Source:		http://www.nc.orc.ru/pub/Linux/pniam/%{name}-%{version}.tgz
 Patch:		pniam.patch
 Group:		Base/Authentication and Autorization
 Group(pl):	Podstawowe/Autentykacja i Autoryzacja
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 blah blah blach
