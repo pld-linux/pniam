@@ -18,7 +18,7 @@ blah blah blach
 %patch -p 1
 
 %build
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
