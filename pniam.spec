@@ -42,14 +42,12 @@ install modules/pniam_pwd/pniam_pwd.so  $RPM_BUILD_ROOT/lib/pniam/pniam_pwd.so
 install modules/pniam_rootok/pniam_rootok.so  $RPM_BUILD_ROOT/lib/pniam/pniam_rootok.so
 install modules/pniam_anything/pniam_anything.conf  $RPM_BUILD_ROOT/etc/security/pniam_anything.conf
 
-gzip -9nf README TODO docs/pniam.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,TODO,docs/pniam.txt}.gz docs/pniam*.html
+%doc README TODO docs/pniam.txt docs/pniam*.html
 %dir %{_sysconfdir}/pniam.d
 %dir /etc/security
 %dir %{_includedir}/pniam
