@@ -1,21 +1,26 @@
-Summary:	PNIAM - revolutionary authentication and authorization library 
+Summary:	PNIAM - revolutionary authentication and authorization library
+Summary(pl):	PNIAM - rewolucyjna biblioteka autentykacji i autoryzacji
 Name:		pniam
 Version:	0.04
 Release:	2
 License:	GPL
-URL:		http://www.pld.org.pl/
-Source0:	http://www.nc.orc.ru/pub/Linux/pniam/%{name}-%{version}.tgz
-Patch0:		pniam.patch
 Group:		Base/Authentication and Autorization
+Group(de):	Grundsätzlich/Authentikation und Autorisation
 Group(pl):	Podstawowe/Autentykacja i Autoryzacja
+Source0:	http://www.nc.orc.ru/pub/Linux/pniam/%{name}-%{version}.tgz
+Patch0:		%{name}.patch
+URL:		http://www.pld.org.pl/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-blah blah blach
+PNIAM - revolutionary authentication and authorization library.
+
+%description -l pl
+PNIAM - rewolucyjna biblioteka autentykacji i autoryzacji.
 
 %prep
 %setup -q 
-%patch -p 1
+%patch -p1
 
 %build
 %{__make}
