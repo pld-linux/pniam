@@ -4,7 +4,7 @@ Name:		pniam
 Version:	0.04
 Release:	2
 License:	GPL
-Group:		Base/Authentication and Autorization
+Group:		Base/Authentication and Authorization
 Group(de):	Grundsätzlich/Authentikation und Autorisation
 Group(pl):	Podstawowe/Autentykacja i Autoryzacja
 Source0:	http://www.nc.orc.ru/pub/Linux/pniam/%{name}-%{version}.tgz
