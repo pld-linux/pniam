@@ -2,10 +2,10 @@ Summary:	PNIAM - revolutionary authentication and authorization library
 Name:		pniam
 Version:	0.04
 Release:	2
-Copyright:	GPL
+License:	GPL
 URL:		http://www.pld.org.pl/
-Source:		http://www.nc.orc.ru/pub/Linux/pniam/%{name}-%{version}.tgz
-Patch:		pniam.patch
+Source0:	http://www.nc.orc.ru/pub/Linux/pniam/%{name}-%{version}.tgz
+Patch0:		pniam.patch
 Group:		Base/Authentication and Autorization
 Group(pl):	Podstawowe/Autentykacja i Autoryzacja
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,8 +21,9 @@ blah blah blach
 make
 
 %install
-install -d $RPM_BUILD_ROOT/etc \
-	$RPM_BUILD_ROOT/etc/pniam.d \
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_sysconfdir} \
+$RPM_BUILD_ROOT%{_sysconfdir}/pniam.d \
 	$RPM_BUILD_ROOT/etc/security \
 	$RPM_BUILD_ROOT/lib \
 	$RPM_BUILD_ROOT/lib/pniam \
@@ -46,9 +47,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc {README,TODO,docs/pniam.txt}.gz docs/pniam*.html
-%dir /etc/pniam.d
+%dir %{_sysconfdir}/pniam.d
 %dir /etc/security
 %dir %{_includedir}/pniam
 /lib/* 
 /etc/security/*
-/usr/include/pniam/*
+%{_includedir}/pniam/*
