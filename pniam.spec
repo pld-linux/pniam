@@ -9,6 +9,7 @@ Source0:	http://www.nc.orc.ru/pub/Linux/pniam/%{name}-%{version}.tgz
 # Source0-md5:	4eee72d4dfae094d771c9a51125c7663
 Patch0:		%{name}.patch
 URL:		http://www.pld.org.pl/
+BuildRequires:	sgml-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
