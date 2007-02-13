@@ -1,5 +1,5 @@
 Summary:	PNIAM - revolutionary authentication and authorization library
-Summary(pl.UTF-8):   PNIAM - rewolucyjna biblioteka autentykacji i autoryzacji
+Summary(pl.UTF-8):	PNIAM - rewolucyjna biblioteka autentykacji i autoryzacji
 Name:		pniam
 Version:	0.04
 Release:	2
